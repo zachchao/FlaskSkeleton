@@ -1,0 +1,29 @@
+/* CS that will be used for every page */
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer{
+  width: 100%;
+  background-color: #36393E;
+  color: white;
+  margin-top: auto;
+  height: 60px;
+  line-height: 30px;
+}
+
+.muted{
+  color: #6c757d;
+}
+
+.ubuntuFont{
+  font-family: 'Ubuntu', sans-serif;
+}

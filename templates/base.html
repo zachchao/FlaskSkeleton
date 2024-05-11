@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="h-full">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include 'header.html' %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/output.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/base.css')}}">
+    <script src="{{url_for('static', filename='js/base.js')}}"></script>
+    {% block header %}{% endblock %}
+  </head>
+
+  {% block styles %}{% endblock %}
+
+  <body class="h-full min-h-screen md:flex">
+    <div id="snackbar" class="bg-violet-200 text-center text-base font-sans rounded-md py-4 px-2 border-violet-400 border-2 tracking-wide">test</div>
+    {% include 'navbar.html' %}
+
+    <div id="main-container" class="p-8 left-0 md:left-8 relative sm:p-16 flex justify-start w-screen max-w-6xl mx-auto min-h-[calc(100vh-4rem)]">
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+
+  {% block outside_body %}{% endblock %}
+  {% block scripts %}{% endblock %}
+</html>

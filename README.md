@@ -12,7 +12,7 @@ This is where you put all of your html templates for doing a {% include 'templat
 This skeleton has all the requirements to push to heroku out of the box(a free web hosting service).
 1. Download heroku cli [here](https://devcenter.heroku.com/articles/git).
 2. Run `heroku create <NAME>`
-3. Do the normal git dance, 
+3. Do the normal git dance,
 
 	`git add .`
 

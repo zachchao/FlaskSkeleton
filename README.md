@@ -3,8 +3,14 @@ A simple flask skeleton to be cloned and then used for starting small flask appl
 
 # Setup
 Make sure you have python [installed](https://www.python.org/downloads/) and in your PATH
+
 Install the dependencies with
 `pip install -r .\requirements.txt`
+
+Create a `.env` file in the root directory and add the following key:
+```
+APP_SECRET_KEY = blahblahblah
+```
 
 # How to use
 ## app.py

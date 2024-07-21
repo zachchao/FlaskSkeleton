@@ -42,6 +42,10 @@ def home():
 def send_js(path):
   return send_from_directory('static/js', path, mimetype='text/javascript')
 
+@app.route('/static/css/<path:path>')
+def send_css(path):
+  return send_from_directory('static/css', path, mimetype='text/css')
+
 @app.errorhandler(404)
 def page_not_found(e):
     # note that we set the 404 status explicitly
